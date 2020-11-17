@@ -1,0 +1,3 @@
+tasks:
+  - init: open index.html
+    command: open index.html
