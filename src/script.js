@@ -25,5 +25,6 @@ function draw() {
   strokeWeight(3); //make the lines a little thicker
   background(0); //make the background black (cuz it's asteroids(duh))
   renderAll(); //now we draw everything
-
+  handleCollision();
+  firstTimeRender = false;
 }
