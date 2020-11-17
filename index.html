@@ -4,23 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
-    <link href="src/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 	<!--if you want to have this take up less space and have wifi connection always you can uncomment the cdnjs script link and comment out the p5minjs and p5collidejs libraries>
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>-->
 	<script src = "lib/p5.min.js"></script>
 	<script src = "lib/p5.collide2d.min.js"></script>
-	<script src ="src/js/gameObjects/laser.js"></script>
-	<script src="src/js/events/keyHandler.js"></script>
-	<script src = "src/js/gameObjects/ship.js"></script>
-    <script src="src/js/script.js"></script>
-	<script src="src/js/gameObjects/asteroid.js"></script>
-	<script src ="src/js/gameObjects/base.js"></script>
-	<script src = "src/js/utilityObjects/border.js"></script>
-
-
-
+	<script src = "src/Objects/allobjects.js"></script>
+	<script src ="src/Objects/gameObjects/laser.js"></script>
+	<script src="src/events/keyHandler.js"></script>
+	<script src = "src/Objects/gameObjects/ship.js"></script>
+    <script src="src/script.js"></script>
+	<script src="src/Objects/gameObjects/asteroid.js"></script>
+	<script src ="src/Objects/gameObjects/base.js"></script>
+	<script src = "src/Objects/utilityObjects/border.js"></script>
+	<script src = "src/setup/gamesetup.js"></script>
+	<script src = "src/events/collision.js"></script>
 
   </body>
 </html>

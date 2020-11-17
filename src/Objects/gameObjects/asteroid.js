@@ -1,5 +1,5 @@
 function asteroid(){
-  this.pos = createVector(random(-1*GAMEWIDTH/2,GAMEWIDTH/2),random(-1*GAMEHEIGHT/2,GAMEHEIGHT/2));
+  this.pos = createVector(random(-1*GAMEWIDTH/2+ship.screenPos.x,GAMEWIDTH/2+ship.screenPos.x),random(-1*GAMEHEIGHT/2+ship.screenPos.y,GAMEHEIGHT/2+ship.screenPos.y));
   angleMode(RADIANS);
   var randAngle = random(0,TWO_PI);
   var randSpeed = random(1,2);

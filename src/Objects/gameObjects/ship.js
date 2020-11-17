@@ -1,3 +1,5 @@
+//this is the vector at which all objects move on the screen because the ship is "moving"
+var gameVector;
 function Ship(){
   //a bunch of variables that contain details about our location
   this.pos = createVector(width/2,height/2);
@@ -90,6 +92,10 @@ function Ship(){
 	//and add it to our position
     this.pos.add(this.velocity);
 	//"because physics"
+
+	gameVector.set(this.velocity.x*(-1),this.velocity.y*(-1));//update the game vector
+  	//it's just the oposite of the ship's velocity
+  	//because when you move forward everything moves backward
   }
 
 
